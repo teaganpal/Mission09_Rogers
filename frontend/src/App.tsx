@@ -1,10 +1,12 @@
 import teamData from './CollegeBasketballTeams.json';
 import './App.css';
 
+// welcome heading
 function Welcome() {
   return <h1>NCAA Basketball Teams</h1>;
 }
 
+// creates a team instance to print
 function Team({
   school,
   name,
@@ -27,6 +29,7 @@ function Team({
   );
 }
 
+// compiles each team into a list (basically like a loop)
 function TeamList() {
   return (
     <>
@@ -43,6 +46,7 @@ function TeamList() {
   );
 }
 
+// brings all the functions together
 function App() {
   return (
     <>
